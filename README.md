@@ -13,46 +13,49 @@ First, clone the repository to your local machine:
 git clone <repository_url>
 cd <project_directory>
 
+```
 
-On macOS/Linux:
+### a. On macOS/Linux:
+```bash
 # Create a virtual environment
 python3 -m venv env
-
 # Activate the virtual environment
 source env/bin/activate
+```
 
 
-On Windows:
+### b. On Windows:
+```bash
 # Create a virtual environment
 python -m venv env
 # Activate the virtual environment
 env\Scripts\activate
+```
 
 
 
-3. Install Dependencies
+### 3. Install Dependencies
 Install all required Python packages using pip:
 
-bash
-Copy code
+```bash
 pip install -r requirements.txt
-4. Set Up the Database
+```
+
+### 4. Set Up the Database
 Run the following command to apply the migrations and set up the database:
 
-bash
-Copy code
+```bash
 python manage.py migrate
+```
 If you want to add a superuser to access the Django admin panel, run the following:
-
-bash
-Copy code
+```bash
 python manage.py createsuperuser
+```
 You will be prompted to enter a username, email, and password.
 
-5. Run the Development Server
+### 5. Run the Development Server
 Start the Django development server by running the following command:
-
-bash
-Copy code
+```bash
 python manage.py runserver
+```
 Now, you can access the application in your browser at http://127.0.0.1:8000/.
