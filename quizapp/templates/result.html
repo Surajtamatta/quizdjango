@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Result</title>
+</head>
+<body>
+    <h1>{{ result }}!</h1>
+    <p>The correct answer was: {{ question.correct_answer }}</p>
+    <a href="{% url 'get_question' session_id=session_id %}">Next Question</a><br>
+    <a href="{% url 'quiz_results' session_id=session_id %}">View Summary</a>
+</body>
+</html>
